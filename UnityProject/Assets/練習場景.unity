@@ -480,9 +480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  textHp: {fileID: 235324645}
+  texthp: {fileID: 235324645}
   aud: {fileID: 535656286}
-  soundHit: {fileID: 8300000, guid: 0bda53c42232dad41a2a79b16daf8b10, type: 3}
+  soundhurt: {fileID: 8300000, guid: 0bda53c42232dad41a2a79b16daf8b10, type: 3}
 --- !u!82 &535656286
 AudioSource:
   m_ObjectHideFlags: 0
@@ -749,8 +749,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212127334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -0.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4, y: -0.099999905, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2129298582}
@@ -1204,8 +1204,8 @@ MonoBehaviour:
   bullet: {fileID: 4188934032714802657, guid: 8058be627f9654545a83c5749037a195, type: 3}
   point: {fileID: 1212127335}
   aud: {fileID: 2129298586}
-  soundShoot: {fileID: 8300000, guid: e9552f51221d8f04999e786243374ffe, type: 3}
-  speed: 30
+  shootsound: {fileID: 8300000, guid: e9552f51221d8f04999e786243374ffe, type: 3}
+  speed: 20.2
 --- !u!82 &2129298586
 AudioSource:
   m_ObjectHideFlags: 0

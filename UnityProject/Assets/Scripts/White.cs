@@ -3,7 +3,36 @@
 public class White : MonoBehaviour
 {
     #region 練習區域 - 在此區域內練習
-    
+
+
+
+    public GameObject bullet;
+
+    [Header("子彈發射位置")]
+    public Transform point;
+
+    [Header("音效區域")]
+    public AudioSource aud;
+    public AudioClip shootsound;
+
+    private void shooting()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Instantiate(bullet, point.position, Quaternion.identity);
+            aud.PlayOneShot(shootsound, 1.5f);
+        }
+    }
+    private void Update()
+    {
+        shooting();
+    }
+
+
+
+
+
+
     #endregion
 
     #region KID 區域 - 不要偷看 @3@
@@ -15,11 +44,13 @@ public class White : MonoBehaviour
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+
     }
 
     private void FixedUpdate()
     {
         Move();
+
     }
 
     /// <summary>
